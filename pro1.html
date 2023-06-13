@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+  Username:  <input type="text" name="uname" id="uname" value="">
+  <br>
+  Password :  <input type="password" name="upass" id="upass" value=""> <br>
+  <button  onclick="login()">login</button>
+  <p id="hell"> </p>
+ <script>
+    function login(){
+        var name = document.getElementById('uname').value;
+        var pname = document.getElementById('upass').value;
+
+        if (name == "amityadav" && pname == "1234" ){
+            document.getElementById('hell').innerText = "hello user";
+        } else{
+            document.write("invalid user name");
+        }
+    }
+ </script>
 </body>
 </html>
